@@ -1,6 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NextJS example of TradingView Charts with a DataFeed from [Solana Tracker](https://www.solanatracker.io/data-api)
+
+![](https://i.gyazo.com/6adc9037e77f290636b7d4d1509cdcd8.png)
+
+Example: [Solana Tracker](https://www.solanatracker.io/tokens/EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm)
 
 ## Getting Started
+
+Request access to Advanced Charts from Trading View [here](https://www.tradingview.com/advanced-charts/)
 
 First, run the development server:
 
