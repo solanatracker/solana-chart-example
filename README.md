@@ -7,6 +7,7 @@ Example: [Solana Tracker](https://www.solanatracker.io/tokens/EKpQGSJtjMFqKZ9KQa
 ## Getting Started
 
 Request access to Advanced Charts from Trading View [here](https://www.tradingview.com/advanced-charts/)
+Move chart_library folder in /public/static
 
 First, run the development server:
 
