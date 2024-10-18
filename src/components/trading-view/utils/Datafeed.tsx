@@ -430,6 +430,7 @@ const makeDataFeed = (tokenId: string, tokenSymbol: string, poolId: string) => {
               high: bar.high,
               open: bar.open,
               close: bar.close,
+              volume: bar.volume,
             });
           }
         });
