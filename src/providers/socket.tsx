@@ -34,7 +34,7 @@ class WebSocketService {
         }
         this.socket = new WebSocket(process.env.NEXT_PUBLIC_DATASTREAM as string);
         this.transactionSocket = new WebSocket(
-          process.env.NEXT_PUBLIC_WS as string
+          process.env.NEXT_PUBLIC_DATASTREAM as string
         );
 
         window.socket = this.socket;
@@ -62,6 +62,9 @@ class WebSocketService {
                 return;
               } else if (message.data?.tx) {
                 this.transactions.add(message.data.tx);
+              }
+              if (message.room.includes('price:')) {
+                this.emitter.emit(`price-by-token:${message.data.token}`, message.data);
               }
               this.emitter.emit(message.room, message.data);
               break;

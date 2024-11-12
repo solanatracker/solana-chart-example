@@ -54,6 +54,7 @@ export default function Chart({ tokenAddress }: Props) {
                     tokenId={pool.tokenAddress}
                     tokenSymbol={token.token.symbol || token.token.name}
                     poolId={pool.poolId}
+                    pools={token.pools.map((p) => p.poolId)}
                 />
             ) : null}
         </div>

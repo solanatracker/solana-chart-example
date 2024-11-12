@@ -39,14 +39,14 @@ const TVChartContainer = ({
   tokenId,
   tokenSymbol,
   poolId,
+  pools,
 }: {
   tokenId: string;
   tokenSymbol: string;
   poolId: string;
+  pools?: any; 
 }) => {
-  let datafeed = useTvDataFeed(tokenId, tokenSymbol, poolId);
-  let resolution = window.localStorage.getItem("resolution") ?? "1s";
-
+  const datafeed = useTvDataFeed(tokenId, tokenSymbol, poolId, pools);
 
   const defaultProps: ChartContainerProps = {
     symbol: tokenSymbol,
